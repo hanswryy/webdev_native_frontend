@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tailwind.css">
+</head>
+<body>
+    <div class="bg-gray-50">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="text-2xl font-bold">DramaKu</h1>
+            </div>
+  
+            <div class="flex space-x-4 mb-6">
+                <div class="w-1/6">
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-lg font-semibold dropdown-toggle">Dramas</a>
+                            <ul class="space-y-2 hidden dropdown-menu pl-8">
+                                <li><a href="#" class="text-lg">Validate</a></li>
+                                <li><a href="#" class="text-lg">Input New Drama</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="text-lg">Korea</a></li>
+                        <li><a href="#" class="text-lg">China</a></li>
+                    </ul>
+                </div>
+                <div class="w-5/6">
+                    <div class="flex space-x-2 mb-4 flex-wrap justify-between">
+                        <div class="flex items-center space-x-2">
+                            <label class="block text-base mb-2">Filtered by:</label>
+                            <select class="border border-gray-300 rounded-md px-4 py-2 text-center">
+                                <option>Unapproved</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <label class="block text-base mb-2">Shows</label>
+                            <select class="border border-gray-300 rounded-md px-4 py-2 text-center">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                            </select>
+                        </div>
+                        <input
+                            type="text"
+                            class="border border-gray-300 rounded-full px-4 py-2 w-64"
+                        />
+                    </div>
+                    <div class="bg-white shadow-md text-sm">
+                        <table class="w-full bg-white shadow-md rounded-lg overflow-hidden">
+                            <thead class="bg-gray-200 text-gray-600">
+                                <tr>
+                                    <th class="px-6 py-3 text-left">#</th>
+                                    <th class="px-6 py-3 text-left">Drama</th>
+                                    <th class="px-6 py-3 text-left">Actors</th>
+                                    <th class="px-6 py-3 text-left">Genres</th>
+                                    <th class="px-6 py-3 text-left">Synopsis</th>
+                                    <th class="px-6 py-3 text-left">Status</th>
+                                    <th class="px-6 py-3 text-left w-1/12">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-red-50">
+                                    <td class="px-6 py-4">1</td>
+                                    <td class="px-6 py-4"><a id="validate">[2024] Japan - Eye Love You</a></td>
+                                    <td class="px-6 py-4">Takuya Kimura, Takeuchi Yuko, Neinen Reina</td>
+                                    <td class="px-6 py-4">Romance, Adventure, Comedy</td>
+                                    <td class="px-6 py-4">I love this drama. It taught me a lot about money and finance. Love is not everything. We need to face the reality too. Being stoic is the best.</td>
+                                    <td class="px-6 py-4">Unapproved</td>
+                                    <td class="px-6 py-4">
+                                        <a href="#" class="text-blue-600 hover:underline">Edit</a> | 
+                                        <a href="#" class="text-red-600 hover:underline">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="mx-auto w-full px-10 py-10">
+                <div class="flex justify-center space-x-4 mb-6">
+                    <button class="bg-orange-500 text-white w-28 px-4 py-1 rounded-xl">Approve</button>
+                    <button class="bg-red-500 text-white w-28 px-4 py-1 rounded-xl">Delete</button>
+                </div>
+                <div class="flex m:flex-col-reverse xl:flex-row mb-6">
+                    <div class="lg:w-1/2">
+                        <img class="w-full rounded-xl" src=ikuyoo.jpeg alt="Drama Poster" />
+                    </div>
+                    <div class="lg:w-1/2 lg:pl-8">
+                        <h2 class="text-2xl font-bold mb-2">Title of the drama 1 that makes two lines</h2>
+                        <p class="text-sm mb-2">Other titles: Title 2, Title 3, Title 4</p>
+                        <p class="text-sm mb-2">Year: Spring 2024</p>
+                        <p class="text-sm mb-2">Synopsis: Sometimes unhelpful. I don't read it thoroughly. But what helps me is the genres. I need to see genres and actors. That is what I want.</p>
+                        <p class="text-sm mb-2">Genres: Genre 1, Genre 2, Genre 3</p>
+                        <p class="text-sm mb-2">Rating: 3.5/5</p>
+                        <p class="text-sm mb-4">Availability: Fansub: @sub on X</p>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-xl font-bold mb-4">Actors</h3>
+                    <div class="flex justify-between space-x-4 overflow-x-auto">
+                      <div class="flex-shrink-0">
+                        <img class="w-30 h-44 rounded-xl" src=actor.png alt=actor />
+                        <p class="text-sm text-center mt-2">Actor</p>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <img class="w-30 h-44 rounded-xl" src=actor.png alt=actor />
+                        <p class="text-sm text-center mt-2">Actor</p>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <img class="w-30 h-44 rounded-xl" src=actor.png alt=actor />
+                        <p class="text-sm text-center mt-2">Actor</p>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <img class="w-30 h-44 rounded-xl" src=actor.png alt=actor />
+                        <p class="text-sm text-center mt-2">Actor</p>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <img class="w-30 h-44 rounded-xl" src=actor.png alt=actor />
+                        <p class="text-sm text-center mt-2">Actor</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <img class="w-full rounded-xl" src=video_player_placeholder.png alt="Drama Poster" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

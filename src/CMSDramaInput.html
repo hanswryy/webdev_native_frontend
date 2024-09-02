@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tailwind.css">
+</head>
+<body>
+    <div class="bg-gray-50">
+        <div class="container mx-auto px-4 py-6">
+          <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-bold">DramaKu</h1>
+          </div>
+  
+          <div class="flex space-x-4 mb-6">
+            <div class="w-1/6">
+              <ul class="space-y-2">
+                <li><a href="#" class="text-lg font-semibold">Japan</a></li>
+                <li><a href="#" class="text-lg">Korea</a></li>
+                <li><a href="#" class="text-lg">China</a></li>
+              </ul>
+            </div>
+  
+            <div class="w-5/6">
+                <div class="flex space-x-4">
+                    <div class="w-1/5 flex flex-col items-center space-y-4">
+                        <img class="w-full rounded-xl" src=ikuyoo.jpeg alt="Drama Poster" />
+                        <!-- submit button -->
+                        <button class="bg-orange-500 text-white px-4 py-2 rounded">Submit</button>
+                    </div>
+    
+                    <div class="w-4/5">
+                        <!-- Label for Title and input field -->
+                        <div class="flex space-x-4">
+                            <div class="w-1/2">
+                                <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
+                                <input type="text" name="title" id="title" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-300 px-2 py-1">
+                                <div class="flex space-x-4 mt-2">
+                                    <div class="w-1/5">
+                                        <label for="title" class="block text-sm font-medium text-gray-700">Year</label>
+                                        <select class="border border-gray-300 rounded-md px-4 py-2 w-full h-7 mt-1">
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="w-4/5">
+                                        <label for="title" class="block text-sm font-medium text-gray-700">Country</label>
+                                        <input type="text" name="title" id="title" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-300 px-2 py-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-1/2">
+                                <label for="title" class="block text-sm font-medium text-gray-700">Alternative Title</label>
+                                <input type="text" name="title" id="title" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-300 px-2 py-1">
+                            </div>
+                        </div>
+                        <!-- text area for synopsys -->
+                        <div class="w-full mt-2">
+                            <label for="title" class="block text-sm font-medium text-gray-700">Synopsis</label>
+                            <textarea name="synopsis" id="synopsis" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-300 px-2 py-1 h-20"></textarea>
+                        </div>
+                        <label for="title" class="block text-sm font-medium text-gray-700 mt-2">Availability</label>
+                        <input type="text" name="title" id="title" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-300 px-2 py-1">
+                        
+                        <label for="title" class="block text-sm font-medium text-gray-700 mt-2">Add Genres</label>
+                        <div class="mt-2 grid grid-cols-4 gap-2">
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Action</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Adventures</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Romance</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Drama</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Slice of Life</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Action</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Adventures</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Romance</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Drama</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Slice of Life</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Action</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Adventures</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Romance</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Drama</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Slice of Life</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Action</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Adventures</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Romance</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Drama</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Slice of Life</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Action</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Adventures</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Romance</span>
+                            </label>
+                            <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2">Drama</span>
+                            </label>
+                        </div>
+                        <div class="mt-4">
+                            <label class="block text-sm font-medium text-gray-700">Add Actors (Up to 9)</label>
+                            <input type="text" placeholder="Search Actor Names" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+                      
+                            <div class="mt-4 grid grid-cols-3 gap-4">
+                              <div class="relative bg-white rounded-md shadow-md flex space-x-4">
+                                <div class="w-20 h-24 bg-gray-200 rounded-xl m-4"></div>
+                                <p class="text-center mt-4">Actor 1</p>
+                                <button class="absolute top-4 right-4 text-xs text-red-500">x</button>
+                              </div>
+                                <div class="relative bg-white rounded-md shadow-md flex space-x-4">
+                                    <div class="w-20 h-24 bg-gray-200 rounded-xl m-4"></div>
+                                    <p class="text-center mt-4">Actor 2</p>
+                                    <button class="absolute top-4 right-4 text-xs text-red-500">x</button>
+                                </div>
+                                <div class="relative bg-white rounded-md shadow-md flex space-x-4">
+                                    <div class="w-20 h-24 bg-gray-200 rounded-xl m-4"></div>
+                                    <p class="text-center mt-4">Actor 3</p>
+                                    <button class="absolute top-4 right-4 text-xs text-red-500">x</button>
+                                </div>
+                                <div class="relative bg-white rounded-md shadow-md flex space-x-4">
+                                    <div class="w-20 h-24 bg-gray-200 rounded-xl m-4"></div>
+                                    <p class="text-center mt-4">Actor 4</p>
+                                    <button class="absolute top-4 right-4 text-xs text-red-500">x</button>
+                                </div>
+                                <div class="relative bg-white rounded-md shadow-md flex space-x-4">
+                                    <div class="w-20 h-24 bg-gray-200 rounded-xl m-4"></div>
+                                    <p class="text-center mt-4">Actor 5</p>
+                                    <button class="absolute top-4 right-4 text-xs text-red-500">x</button>
+                                </div>
+                                <div class="relative bg-white rounded-md shadow-md flex space-x-4">
+                                    <div class="w-20 h-24 bg-gray-200 rounded-xl m-4"></div>
+                                    <p class="text-center mt-4">Actor 6</p>
+                                    <button class="absolute top-4 right-4 text-xs text-red-500">x</button>
+                                </div>
+                                <div class="relative bg-white rounded-md shadow-md flex space-x-4">
+                                    <div class="w-20 h-24 bg-gray-200 rounded-xl m-4"></div>
+                                    <p class="text-center mt-4">Actor 7</p>
+                                    <button class="absolute top-4 right-4 text-xs text-red-500">x</button>
+                                </div>
+                                <div class="relative bg-white rounded-md shadow-md flex space-x-4">
+                                    <div class="w-20 h-24 bg-gray-200 rounded-xl m-4"></div>
+                                    <p class="text-center mt-4">Actor 8</p>
+                                    <button class="absolute top-4 right-4 text-xs text-red-500">x</button>
+                                </div>  
+                                <div class="relative bg-white rounded-md shadow-md flex space-x-4">
+                                    <div class="w-20 h-24 bg-gray-200 rounded-xl m-4"></div>
+                                    <p class="text-center mt-4">Actor 9</p>
+                                    <button class="absolute top-4 right-4 text-xs text-red-500">x</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4 mt-4">
+                            <div class="w-1/2">
+                                <label for="title" class="block text-sm font-medium text-gray-700">Link Trailer</label>
+                                <input type="text" name="title" id="title" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-300 px-2 py-1">
+                            </div>
+                            <div class="w-1/2">
+                                <label for="title" class="block text-sm font-medium text-gray-700">Award</label>
+                                <select class="border border-gray-300 rounded-md px-4 py-2 w-full h-7 mt-1">
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
