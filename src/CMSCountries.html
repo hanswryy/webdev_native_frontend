@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMSCountries</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        body {
+            background-color: #f8f8f8;
+        }
+        .actions button {
+            margin-right: 8px;
+        }
+        .container-full {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-6">
+        <!-- Sidebar and Main Content Combined -->
+        <div class="mb-6">
+            <h1 class="text-2xl font-bold">DramaKu</h1>
+        </div>
+
+        <div class="flex space-x-4">
+            <!-- Sidebar -->
+            <div class="w-1/6">
+                <ul class="space-y-4">
+                    <li><a href="#" class="text-lg">Dramas</a></li>
+                    <li><a href="#" class="text-lg font-semibold">Countries</a></li>
+                    <li><a href="#" class="text-lg">Awards</a></li>
+                    <li><a href="#" class="text-lg">Genres</a></li>
+                    <li><a href="#" class="text-lg">Actors</a></li>
+                    <li><a href="#" class="text-lg">Comments</a></li>
+                    <li><a href="#" class="text-lg">Users</a></li>
+                    <li><a href="#" class="text-lg">Logout</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="w-5/6">
+                <form class="mb-4">
+                    <div class="flex items-center">
+                        <label for="country" class="text-lg mr-4">Country</label>
+                        <input
+                            type="text"
+                            id="country"
+                            name="country"
+                            class="border border-gray-300 rounded px-4 py-2 mr-4 w-full"
+                            style="max-width: 300px; padding: 4px;"
+                        />
+                        <button type="submit" style="background-color: #ff8636; color: white; border-radius: 10px; padding: 4px 12px;">Submit</button>
+                    </div>
+                </form>
+
+                <table class="w-full table-auto">
+                    <thead>
+                        <tr class="text-left">
+                            <th class="p-2">#</th>
+                            <th class="p-2">Countries</th>
+                            <th class="p-2">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-red-50">
+                            <td class="p-2">1</td>
+                            <td class="p-2 flex items-center">
+                                <input
+                                    type="text"
+                                    value="Japan"
+                                    class="border border-gray-300 rounded px-2 py-1"
+                                    style="max-width: 200px;"
+                                />
+                                <input
+                                    type="radio"
+                                    name="default"
+                                    nonchecked
+                                    class="ml-4"
+                                />
+                                <span class="ml-2 text-gray-500">Default</span>
+                            </td>
+                            <td class="p-2 actions">
+                                <button class="text-red-500">Rename</button>|
+                                <button class="text-red-500">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="p-2">2</td>
+                            <td class="p-2">Korea</td>
+                            <td class="p-2 actions">
+                                <button class="text-red-500">Rename</button>|
+                                <button class="text-red-500">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="bg-red-50">
+                            <td class="p-2">3</td>
+                            <td class="p-2">China</td>
+                            <td class="p-2 actions">
+                                <button class="text-red-500">Rename</button>|
+                                <button class="text-red-500">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
